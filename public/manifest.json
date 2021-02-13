@@ -13,6 +13,11 @@
       "sizes": "192x192"
     },
     {
+      "src": "pepega120.png",
+      "type": "image/png",
+      "sizes": "120x120"
+    },
+    {
       "src": "logo512.png",
       "type": "image/png",
       "sizes": "512x512"
