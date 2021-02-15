@@ -1,12 +1,13 @@
+import React from 'react';
 import underconstruction from './under_construction.png';
+import {mlProjects, guitarArrangements, drawings} from './data';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <MenuBar />
-      <MLProjectList />
+      <ProjectPanel />   
     </div>
   );
 }
@@ -19,12 +20,53 @@ function Header(props) {
   );
 }
 
+class ProjectPanel extends React.Component {
+  constructor(props) {
+    super(props);
+    this.handleMLP = this.handleMLP.bind(this);
+    this.handlerGA = this.handlerGA.bind(this);
+    this.handlerDraw = this.handlerDraw.bind(this);
+    this.state = {tableState: "mlpList"};
+  }
+
+  handleMLP() {
+    this.setState({tableState: "mlpList"});
+  }
+
+  handlerGA() {
+    this.setState({tableState: "gaList"});
+  }
+
+  handlerDraw() {
+    this.setState({tableState: "dwList"});
+  }
+
+  render() {
+    const tableState = this.state.tableState;
+    let currentList;
+    if (tableState === "mlpList") {
+      currentList = <MLProjectList />
+    } else if (tableState === "gaList") {
+      currentList = <GuitarArrangementList />
+    } else if (tableState === "dwList") {
+      currentList = <DrawingList />
+    }
+
+    return (
+      <div>
+        <MenuBar handlerMLP={this.handleMLP} handlerGA={this.handlerGA} handlerDraw={this.handlerDraw}/>
+        {currentList}
+      </div>
+    );
+  }
+}
+
 function MenuBar(props) {
   return (
     <div className="MenuBar">
-      <MenuButton value="ML Projects"/>
-      <MenuButton value="Guitar Arrangements"/>
-      <MenuButton value="Drawings"/>
+      <MenuButton onClick={props.handlerMLP} value="ML Projects"/>
+      <MenuButton onClick={props.handlerGA} value="Guitar Arrangements"/>
+      <MenuButton onClick={props.handlerDraw} value="Drawings"/>
     </div>
   )
 }
@@ -32,15 +74,14 @@ function MenuBar(props) {
 function MenuButton(props) {
   return (
     <div className="MenuButton">
-      <button>{props.value}</button>
+      <button onClick={props.onClick}>{props.value}</button>
     </div>
   )
 }
 
 function MLProjectList(props) {
-  const items = [{name: "GAN", description: "Some random text"}]; // Probably the path to file?
-  const listItems = items.map((item) =>
-    <MLProjectItem key={item.name} name={item.name} description={item.description} />
+  const listItems = mlProjects.map((item) =>
+    <MLProjectItem key={item.name} name={item.name} description={item.description} repo={item.repo}/>
   );
   return (
     <div className="MLProjectList">
@@ -50,32 +91,53 @@ function MLProjectList(props) {
 }
 
 function MLProjectItem(props) {
-    // Name of the project (maybe URL to the repo?)
-    // Description (Probaby also based on repo describtion)
-    // Some image? If avaialable, but probably not
   return (
     <div className="MLProjectItem">
       <header>{props.name}</header>
       <p>{props.description}</p>
+      <p>{props.repo}</p>
+    </div>
+  )
+}
+
+function GuitarArrangementList(props) {
+  const listItems = guitarArrangements.map((item) =>
+    <GuitarArrangementItem key={item.name} name={item.name} description={item.description} pdf={item.pdf}/>
+  );
+  return (
+    <div className="GuitarArrangementList">
+      {listItems}
     </div>
   )
 }
 
 function GuitarArrangementItem(props) {
-  // Name of the song
-  // Link to the pdf (for now) - can be on google drive, avaialable for download
   return (
-    <div>
+    <div className="GuitarArrangementItem">
+      <header>{props.name}</header>
+      <p>{props.description}</p>
+      <p>{props.pdf}</p>
+    </div>
+  )
+}
+
+function DrawingList(props) {
+  const listItems = drawings.map((item) =>
+    <DrawingItem key={item.name} name={item.name} description={item.description} img={item.image}/>
+  );
+  return (
+    <div className="GuitarArrangementList">
+      {listItems}
     </div>
   )
 }
 
 function DrawingItem(props) {
-  // sample image (left-mini-box)
-  // Name of the doodle
-  // Short describtion what it is
   return (
-    <div>
+    <div className="DrawingItem">
+      <header>{props.name}</header>
+      <p>{props.description}</p>
+      <p>{props.image}</p>
     </div>
   )
 }
