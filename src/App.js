@@ -1,22 +1,39 @@
 import React from 'react';
+import Container from '@material-ui/core/Container';
+import Paper from '@material-ui/core/Paper';
+import AppBar from '@material-ui/core/AppBar';
+import Box from '@material-ui/core/Box';
+import Card from '@material-ui/core/Card';
+import CardActions from '@material-ui/core/CardActions';
+import CardContent from '@material-ui/core/CardContent';
+import { makeStyles } from '@material-ui/core/styles';
+
 import underconstruction from './under_construction.png';
 import {mlProjects, guitarArrangements, drawings} from './data';
+import { Button, Tab, Tabs, Typography } from '@material-ui/core';
 import './App.css';
+
+
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <ProjectPanel />   
-    </div>
+    <Container maxWidth="md">
+      <Paper elevation={3}>
+        <Header />
+        <ProjectPanel />   
+      </Paper>
+    </Container>
   );
 }
 
 function Header(props) {
   return (
-    <div className="Header">
-      <img src={underconstruction} className="App-header" alt="underconstruction"/>
-    </div>
+    <Box centered>
+      <img src={underconstruction} className="Header-img" alt="underconstruction" />
+    </Box>
+    // <div className="Header">
+    //   <img src={underconstruction} className="Header-img" alt="underconstruction" />
+    // </div>
   );
 }
 
@@ -62,20 +79,20 @@ class ProjectPanel extends React.Component {
 }
 
 function MenuBar(props) {
-  return (
-    <div className="MenuBar">
-      <MenuButton onClick={props.handlerMLP} value="ML Projects"/>
-      <MenuButton onClick={props.handlerGA} value="Guitar Arrangements"/>
-      <MenuButton onClick={props.handlerDraw} value="Drawings"/>
-    </div>
-  )
-}
+  const [value, setValue] = React.useState(0);
 
-function MenuButton(props) {
+  const handleChange = (event, newValue) => {
+    setValue(newValue);
+  };
+
   return (
-    <div className="MenuButton">
-      <button onClick={props.onClick}>{props.value}</button>
-    </div>
+    <AppBar position='static'>
+      <Tabs value={value} onChange={handleChange} centered>
+        <Tab onClick={props.handlerMLP} label="ML Projects"/>
+        <Tab onClick={props.handlerGA} label="Guitar Arrangements"/>
+        <Tab onClick={props.handlerDraw} label="Drawings"/>
+      </Tabs>
+    </AppBar>
   )
 }
 
@@ -92,11 +109,15 @@ function MLProjectList(props) {
 
 function MLProjectItem(props) {
   return (
-    <div className="MLProjectItem">
-      <header>{props.name}</header>
-      <p>{props.description}</p>
-      <p>{props.repo}</p>
-    </div>
+    <Card variant="outlined">
+      <CardContent>
+        <Typography>{props.name}</Typography>
+        <Typography>{props.description}</Typography>
+      </CardContent>
+      <CardActions>
+        <Button>{props.repo}</Button>
+      </CardActions>
+    </Card>
   )
 }
 
@@ -113,11 +134,15 @@ function GuitarArrangementList(props) {
 
 function GuitarArrangementItem(props) {
   return (
-    <div className="GuitarArrangementItem">
-      <header>{props.name}</header>
-      <p>{props.description}</p>
-      <p>{props.pdf}</p>
-    </div>
+    <Card variant="outlined">
+      <CardContent>
+        <Typography>{props.name}</Typography>
+        <Typography>{props.description}</Typography>
+      </CardContent>
+      <CardActions>
+        <Button>{props.pdf}</Button>
+      </CardActions>
+    </Card>
   )
 }
 
@@ -134,11 +159,15 @@ function DrawingList(props) {
 
 function DrawingItem(props) {
   return (
-    <div className="DrawingItem">
-      <header>{props.name}</header>
-      <p>{props.description}</p>
-      <p>{props.image}</p>
-    </div>
+    <Card variant="outlined">
+      <CardContent>
+        <Typography>{props.name}</Typography>
+        <Typography>{props.description}</Typography>
+      </CardContent>
+      <CardActions>
+        <Button>{props.image}</Button>
+      </CardActions>
+    </Card>
   )
 }
 
