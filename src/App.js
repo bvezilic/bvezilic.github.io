@@ -9,6 +9,7 @@ import CardContent from '@material-ui/core/CardContent';
 import { makeStyles } from '@material-ui/core/styles';
 
 import underconstruction from './under_construction.png';
+import littlehoof_banner from './littlehoof_banner.jpg';
 import {mlProjects, guitarArrangements, drawings} from './data';
 import { Button, Tab, Tabs, Typography } from '@material-ui/core';
 import './App.css';
@@ -17,8 +18,8 @@ import './App.css';
 
 function App() {
   return (
-    <Container maxWidth="md">
-      <Paper elevation={3}>
+    <Container maxWidth="lg">
+      <Paper elevation={5}>
         <Header />
         <ProjectPanel />   
       </Paper>
@@ -29,7 +30,7 @@ function App() {
 function Header(props) {
   return (
     <Box centered>
-      <img src={underconstruction} className="Header-img" alt="underconstruction" />
+      <img src={littlehoof_banner} className="Header-banner" alt="underconstruction" />
     </Box>
     // <div className="Header">
     //   <img src={underconstruction} className="Header-img" alt="underconstruction" />
