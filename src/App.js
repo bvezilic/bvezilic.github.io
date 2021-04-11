@@ -79,7 +79,22 @@ class ProjectPanel extends React.Component {
   }
 }
 
+const tabsStyles = makeStyles({
+  root: {
+    background: 'black',
+    fontFamily: "ccwild-words-roman",
+  },
+  indicator: {
+    backgroundColor: 'white',
+  },
+  typography: {
+    fontFamily: "mangatb",
+  }
+});
+
 function MenuBar(props) {
+  const classes = tabsStyles();
+
   const [value, setValue] = React.useState(0);
 
   const handleChange = (event, newValue) => {
@@ -88,10 +103,10 @@ function MenuBar(props) {
 
   return (
     <AppBar position='static'>
-      <Tabs value={value} onChange={handleChange} centered>
-        <Tab onClick={props.handlerMLP} label="ML Projects"/>
-        <Tab onClick={props.handlerGA} label="Guitar Arrangements"/>
-        <Tab onClick={props.handlerDraw} label="Drawings"/>
+      <Tabs value={value} onChange={handleChange} centered classes={{root: classes.root, indicator: classes.indicator}}>
+        <Tab onClick={props.handlerMLP} className={classes.typography} label="ML Projects"/>
+        <Tab onClick={props.handlerGA} className={classes.typography} label="Guitar Arrangements"/>
+        <Tab onClick={props.handlerDraw} className={classes.typography} label="Drawings"/>
       </Tabs>
     </AppBar>
   )

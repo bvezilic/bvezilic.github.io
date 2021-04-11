@@ -12,3 +12,12 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: 'ccwild-words-roman';
+  src: local('ccwild-words-roman'), url(./fonts/ccwild-words-roman.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'mangatb';
+  src: local('mangatb'), url(./fonts/mangatb.ttf) format('truetype');
+}
