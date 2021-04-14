@@ -1,11 +1,15 @@
 export const mlProjects = [    
     {
-        name: "GANs",
+        name: "Variational Autoencoder",
+        image: "../static/autoencoder.png",
+        imageTitle: "Autoencoder",
         description: "Something something",
-        repo: "random link"
+        repo: "https://github.com/bvezilic/Variational-autoencoder"
     },
     {
         name: "RNNs",
+        image: "autoencoder.png",
+        imageTitle: "Autoencoder",
         description: "Something something",
         repo: "random link"
     }
@@ -29,7 +33,7 @@ export const guitarArrangements = [
     }
 ]
 
-export const drawings = [
+export const arts = [
     {
         name: "Rasajski's epic ...",
         description: "",
