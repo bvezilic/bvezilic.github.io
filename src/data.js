@@ -1,42 +1,29 @@
 export const mlProjects = [    
     {
-        name: "Variational Autoencoder",
-        image: "../static/autoencoder.png",
-        imageTitle: "Autoencoder",
-        description: "Something something",
+        name: "Variational-autoencoder",
+        image: "https://dl.dropboxusercontent.com/s/gb5cbc3sa2u6kbu/variational-autoencoder.jpg",
+        imageTitle: "Variational-autoencoder",
+        description: "PyTorch implementation of Variational Autoencoder (VAE) on MNIST dataset.",
         repo: "https://github.com/bvezilic/Variational-autoencoder"
     },
     {
-        name: "RNNs",
-        image: "autoencoder.png",
-        imageTitle: "Autoencoder",
-        description: "Something something",
-        repo: "random link"
+        name: "DnD-name-generator",
+        image: "https://dl.dropboxusercontent.com/s/3m0bo46h44n3srb/name-generator.jpg",
+        imageTitle: "DnD-name-generator",
+        description: "Character-based RNN for generating Dungeons and Dragons character names based on race and gender.",
+        repo: "https://github.com/bvezilic/DnD-name-generator"
     }
 ]
 
 export const guitarArrangements = [
     {
         name: "Ori and the Blind Forest Theme",
+        image: "https://www.dl.dropboxusercontent.com/s/26na5u7mixu7s8d/ori-thumbnail.jpg",
         description: "",
-        pdf: "random link"
-    },
-    {
-        name: "One Punch Man Sad theme",
-        description: "",
-        pdf: "random link"
-    },
-    {
-        name: "Megalovania",
-        description: "Undertale",
-        pdf: "random link"
+        pdf: "https://www.dropbox.com/s/whgyq6izl4i7b5k/Ori%20and%20the%20Blind%20Forest.pdf"
     }
 ]
 
-export const arts = [
-    {
-        name: "Rasajski's epic ...",
-        description: "",
-        image: ""
-    }
+export const drawings = [
+    
 ]

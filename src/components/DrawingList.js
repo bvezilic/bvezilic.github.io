@@ -1,8 +1,8 @@
 import Grid from '@material-ui/core/Grid';
 import { makeStyles } from '@material-ui/core/styles';
 
-import GuitarArrangementCard from './GuitarArrangementCard';
-import { guitarArrangements } from '../data';
+import DrawingCard from './DrawingCard';
+import { drawings } from '../data';
 
 
 const useStyles = makeStyles({
@@ -11,15 +11,15 @@ const useStyles = makeStyles({
   }
 });
 
-export default function GuitarArrangementList(props) {
+export default function DrawingList(props) {
   const classes = useStyles();
 
-  const listItems = guitarArrangements.map((item) =>
+  const listItems = drawings.map((item) =>
     <Grid item sm={12} md={6}>
-      <GuitarArrangementCard 
+      <DrawingCard 
         key={item.name} 
         name={item.name} 
-        description={item.description}
+        description={item.description} 
         image={item.image}
         pdf={item.pdf}/>
     </Grid>
@@ -28,7 +28,7 @@ export default function GuitarArrangementList(props) {
     <div className={classes.root}>
       <Grid container spacing={2}>
         {listItems}
-        </Grid>
+      </Grid>
     </div>
   )
 }

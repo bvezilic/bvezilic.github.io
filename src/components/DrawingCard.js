@@ -1,10 +1,10 @@
 import Card from '@material-ui/core/Card';
-import GitHubIcon from '@material-ui/icons/GitHub';
 import { makeStyles } from '@material-ui/core/styles';
+import PictureAsPdfIcon from '@material-ui/icons/PictureAsPdf';
 import { 
   Button, 
   CardContent, 
-  CardActions, 
+  CardActions,
   CardMedia, 
   Typography 
 } from '@material-ui/core';
@@ -18,20 +18,20 @@ const useStyles = makeStyles({
   media: {
     minHeight: 64,
     minWidth: 64,
-    height: 256,
-    width: '80%',
+    height: '100%',
+    width: 250,
   },
   details: {
     display: 'flex',
     flexDirection: 'column',
   },
 });
-  
-export default function MLProjectCard(props) {
+
+export default function DrawingCard(props) {
   const classes = useStyles();
 
   return (
-    <Card variant="outlined" className={classes.root}>
+    <Card variant="outlined">
       <CardMedia
         className={classes.media}
         image={props.image}
@@ -43,7 +43,7 @@ export default function MLProjectCard(props) {
           <Typography color="textSecondary" component="p">{props.description}</Typography>
         </CardContent>
         <CardActions>
-          <Button href={props.repo} startIcon={<GitHubIcon />}>Github</Button>
+          <Button href={props.pdf} startIcon={<PictureAsPdfIcon />}>pdf</Button>
         </CardActions>
       </div>
     </Card>

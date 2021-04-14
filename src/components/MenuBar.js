@@ -30,7 +30,7 @@ export default function MenuBar(props) {
       <Tabs value={value} onChange={handleChange} centered classes={{root: classes.root, indicator: classes.indicator}}>
         <Tab onClick={props.handlerMLP} className={classes.typography} label="ML Projects"/>
         <Tab onClick={props.handlerGA} className={classes.typography} label="Guitar Arrangements"/>
-        <Tab onClick={props.handlerDraw} className={classes.typography} label="Art"/>
+        <Tab onClick={props.handlerDraw} className={classes.typography} label="Drawings"/>
       </Tabs>
     </AppBar>
   )

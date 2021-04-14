@@ -3,7 +3,7 @@ import React from 'react';
 import MenuBar from './MenuBar';
 import MLProjectList from './MLProjectList';
 import GuitarArrangementList from './GuitarArrangementList';
-import ArtList from './ArtList';
+import DrawingList from './DrawingList';
 
 
 class ProjectPanel extends React.Component {
@@ -35,7 +35,7 @@ class ProjectPanel extends React.Component {
     } else if (tableState === "gaList") {
       currentList = <GuitarArrangementList />
     } else if (tableState === "dwList") {
-      currentList = <ArtList />
+      currentList = <DrawingList />
     }
 
     return (
