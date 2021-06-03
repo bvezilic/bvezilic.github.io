@@ -24,6 +24,7 @@ const useStyles = makeStyles({
   details: {
     display: 'flex',
     flexDirection: 'column',
+    justifyContent: 'space-between',
   },
 });
   
