@@ -17,9 +17,9 @@ export const mlProjects = [
 
 export const guitarArrangements = [
     {
-        name: "Ori and the Blind Forest Theme",
+        name: "Ori and the Blind Forest",
         image: "https://www.dl.dropboxusercontent.com/s/26na5u7mixu7s8d/ori-thumbnail.jpg",
-        description: "",
+        description: "Main theme from Ori and the Blind Forest video game.\nComposed by Gareth Coker.",
         pdf: "https://www.dropbox.com/s/whgyq6izl4i7b5k/Ori%20and%20the%20Blind%20Forest.pdf"
     }
 ]

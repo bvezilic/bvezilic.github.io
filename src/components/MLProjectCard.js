@@ -16,10 +16,9 @@ const useStyles = makeStyles({
     height: '100%',
   },
   media: {
-    minHeight: 64,
-    minWidth: 64,
-    height: 256,
-    width: '80%',
+    flexShrink: 0,
+    height: 200,
+    width: 200,
   },
   details: {
     display: 'flex',

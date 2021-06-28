@@ -16,14 +16,14 @@ const useStyles = makeStyles({
     height: '100%',
   },
   media: {
-    minHeight: 64,
-    minWidth: 64,
-    height: '100%',
-    width: 130,
+    flexShrink: 0,
+    height: 200,
+    width: 200,
   },
   details: {
     display: 'flex',
     flexDirection: 'column',
+    justifyContent: 'space-between',
   },
 });
 
