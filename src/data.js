@@ -21,7 +21,13 @@ export const guitarArrangements = [
         image: "https://www.dl.dropboxusercontent.com/s/26na5u7mixu7s8d/ori-thumbnail.jpg",
         description: "Main theme from Ori and the Blind Forest video game.\nComposed by Gareth Coker.",
         pdf: "https://www.dropbox.com/s/whgyq6izl4i7b5k/Ori%20and%20the%20Blind%20Forest.pdf"
-    }
+    },
+    {
+        name: "Saitama's Theme (Ballad Ver.)",
+        image: "https://www.dl.dropboxusercontent.com/s/81hl2squsf1qo0b/one-punch-man.png",
+        description: "Main theme from One Punch Man series.\nSeason 1, Episode 9, Unyielding Justice.",
+        pdf: "https://www.dropbox.com/s/xdwsnguat1fy0ci/One%20Punch%20Man%20-%20Saitama%27s%20theme.pdf"
+    },
 ]
 
 export const drawings = [
