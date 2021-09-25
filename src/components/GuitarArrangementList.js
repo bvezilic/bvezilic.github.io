@@ -21,7 +21,9 @@ export default function GuitarArrangementList(props) {
         name={item.name} 
         description={item.description}
         image={item.image}
-        pdf={item.pdf}/>
+        pdf={item.pdf}
+        title={item.imageTitle}
+      />
     </Grid>
   );
   return (
