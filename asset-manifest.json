@@ -1,29 +1,24 @@
 {
   "files": {
-    "main.css": "/static/css/main.38dcf915.chunk.css",
-    "main.js": "/static/js/main.01ba7b45.chunk.js",
-    "main.js.map": "/static/js/main.01ba7b45.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.05e50d86.js",
-    "runtime-main.js.map": "/static/js/runtime-main.05e50d86.js.map",
-    "static/js/2.b1d49f07.chunk.js": "/static/js/2.b1d49f07.chunk.js",
-    "static/js/2.b1d49f07.chunk.js.map": "/static/js/2.b1d49f07.chunk.js.map",
-    "static/js/3.17dc11e5.chunk.js": "/static/js/3.17dc11e5.chunk.js",
-    "static/js/3.17dc11e5.chunk.js.map": "/static/js/3.17dc11e5.chunk.js.map",
+    "main.css": "/static/css/main.3fcaebca.css",
+    "main.js": "/static/js/main.46a9bd22.js",
+    "static/js/488.6a9ba86c.chunk.js": "/static/js/488.6a9ba86c.chunk.js",
+    "static/media/littlehoof_banner.jpg": "/static/media/littlehoof_banner.6b9c03e4ed8977757add.jpg",
+    "static/media/neural-style-transfer.png": "/static/media/neural-style-transfer.6fc74325439193e4625a.png",
+    "static/media/eurydice.jpg": "/static/media/eurydice.c6884a6eb9393313ce5b.jpg",
+    "static/media/ori-thumbnail.jpg": "/static/media/ori-thumbnail.cf360792279bf1d5557f.jpg",
+    "static/media/variational-autoencoder.jpg": "/static/media/variational-autoencoder.7c0ecdd56c9ead4cb956.jpg",
+    "static/media/one-punch-man.jpg": "/static/media/one-punch-man.f42271a4557df3514124.jpg",
+    "static/media/ccwild-words-roman.ttf": "/static/media/ccwild-words-roman.7e6deaec117484d525ee.ttf",
+    "static/media/name-generator.jpg": "/static/media/name-generator.4bba219ec9d0fa9b9fdb.jpg",
+    "static/media/mangatb.ttf": "/static/media/mangatb.5dd09d8599dc2551f516.ttf",
     "index.html": "/index.html",
-    "static/css/main.38dcf915.chunk.css.map": "/static/css/main.38dcf915.chunk.css.map",
-    "static/js/2.b1d49f07.chunk.js.LICENSE.txt": "/static/js/2.b1d49f07.chunk.js.LICENSE.txt",
-    "static/media/index.css": "/static/media/mangatb.5dd09d85.ttf",
-    "static/media/eurydice.c6884a6e.jpg": "/static/media/eurydice.c6884a6e.jpg",
-    "static/media/littlehoof_banner.6b9c03e4.jpg": "/static/media/littlehoof_banner.6b9c03e4.jpg",
-    "static/media/name-generator.4bba219e.jpg": "/static/media/name-generator.4bba219e.jpg",
-    "static/media/one-punch-man.f42271a4.jpg": "/static/media/one-punch-man.f42271a4.jpg",
-    "static/media/ori-thumbnail.cf360792.jpg": "/static/media/ori-thumbnail.cf360792.jpg",
-    "static/media/variational-autoencoder.7c0ecdd5.jpg": "/static/media/variational-autoencoder.7c0ecdd5.jpg"
+    "main.3fcaebca.css.map": "/static/css/main.3fcaebca.css.map",
+    "main.46a9bd22.js.map": "/static/js/main.46a9bd22.js.map",
+    "488.6a9ba86c.chunk.js.map": "/static/js/488.6a9ba86c.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.05e50d86.js",
-    "static/js/2.b1d49f07.chunk.js",
-    "static/css/main.38dcf915.chunk.css",
-    "static/js/main.01ba7b45.chunk.js"
+    "static/css/main.3fcaebca.css",
+    "static/js/main.46a9bd22.js"
   ]
 }
