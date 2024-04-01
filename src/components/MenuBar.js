@@ -1,18 +1,18 @@
 import React from 'react';
-import AppBar from '@material-ui/core/AppBar';
-import { Tab, Tabs, makeStyles } from '@material-ui/core';
+import { AppBar, Tab, Tabs } from '@mui/material';
+import { makeStyles } from '@mui/styles';
 
 
 const useStyles = makeStyles({
   root: {
     background: 'black',
-    fontFamily: "ccwild-words-roman",
+    fontFamily: 'ccwild-words-roman',
   },
   indicator: {
     backgroundColor: 'white',
   },
   typography: {
-    fontFamily: "mangatb",
+    fontFamily: 'mangatb',
   }
 });
 
@@ -27,7 +27,7 @@ export default function MenuBar(props) {
 
   return (
     <AppBar position='static'>
-      <Tabs value={value} onChange={handleChange} centered classes={{root: classes.root, indicator: classes.indicator}}>
+      <Tabs value={value} onChange={handleChange} centered textColor='inherit' classes={{root: classes.root, indicator: classes.indicator}}>
         <Tab onClick={props.handlerMLP} className={classes.typography} label="ML Projects"/>
         <Tab onClick={props.handlerGA} className={classes.typography} label="Guitar Arrangements"/>
         <Tab onClick={props.handlerDraw} className={classes.typography} label="Drawings"/>

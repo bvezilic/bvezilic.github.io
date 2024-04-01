@@ -1,13 +1,13 @@
-import Card from '@material-ui/core/Card';
-import PictureAsPdfIcon from '@material-ui/icons/PictureAsPdf';
-import { makeStyles } from '@material-ui/core/styles';
-import { 
+import PictureAsPdfIcon from '@mui/icons-material/PictureAsPdf';
+import { makeStyles } from '@mui/styles';
+import {
+  Card,
   Button, 
   CardContent, 
   CardActions, 
   CardMedia, 
   Typography 
-} from '@material-ui/core';
+} from '@mui/material/';
 
 
 const useStyles = makeStyles({
@@ -43,7 +43,7 @@ export default function DrawingCard(props) {
           <Typography color="textSecondary" component="p">{props.description}</Typography>
         </CardContent>
         <CardActions>
-          <Button href={props.pdf} startIcon={<PictureAsPdfIcon />}>pdf</Button>
+          <Button href={props.pdf} color='inherit' startIcon={<PictureAsPdfIcon />}>pdf</Button>
         </CardActions>
       </div>
     </Card>

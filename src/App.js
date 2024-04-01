@@ -1,6 +1,6 @@
 import React from 'react';
-import Container from '@material-ui/core/Container';
-import Paper from '@material-ui/core/Paper';
+import Container from '@mui/material/Container';
+import Paper from '@mui/material/Paper';
 
 import './App.css';
 import Header from './components/Header';

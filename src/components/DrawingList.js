@@ -1,5 +1,5 @@
-import Grid from '@material-ui/core/Grid';
-import { makeStyles } from '@material-ui/core/styles';
+import Grid from '@mui/material/Grid';
+import { makeStyles } from '@mui/styles';
 
 import DrawingCard from './DrawingCard';
 import { drawings } from '../data';

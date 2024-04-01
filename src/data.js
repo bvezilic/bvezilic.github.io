@@ -3,6 +3,7 @@ import onePunchMan from './images/thumbnails/one-punch-man.jpg'
 import oriBlindForest from './images/thumbnails/ori-thumbnail.jpg'
 import variationalAutoencoder from './images/thumbnails/variational-autoencoder.jpg'
 import nameGenerator from './images/thumbnails/name-generator.jpg'
+import neuralStyleTransfer from './images/thumbnails/neural-style-transfer.png'
 
 
 export const mlProjects = [    
@@ -19,7 +20,15 @@ export const mlProjects = [
         imageTitle: "dnd-name-generator",
         description: "Character-based RNN for generating Dungeons and Dragons character names based on race and gender.",
         repo: "https://github.com/bvezilic/DnD-name-generator"
+    },
+    {
+        name: "Neural-style-transfer",
+        image: neuralStyleTransfer,
+        imageTitle: "neural-style-transfer",
+        description: "PyTorch implementation of Neural Style Transfer. Learning repository with experiments and figuring stuff out.",
+        repo: "https://github.com/bvezilic/Neural-style-transfer"
     }
+
 ]
 
 export const guitarArrangements = [

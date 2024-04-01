@@ -1,13 +1,13 @@
-import Card from '@material-ui/core/Card';
-import GitHubIcon from '@material-ui/icons/GitHub';
-import { makeStyles } from '@material-ui/core/styles';
-import { 
+import GitHubIcon from '@mui/icons-material/GitHub';
+import { makeStyles } from '@mui/styles';
+import {
+  Card,
   Button, 
   CardContent, 
   CardActions, 
   CardMedia, 
   Typography 
-} from '@material-ui/core';
+} from '@mui/material';
 
 
 const useStyles = makeStyles({
@@ -43,7 +43,7 @@ export default function MLProjectCard(props) {
           <Typography color="textSecondary" component="p">{props.description}</Typography>
         </CardContent>
         <CardActions>
-          <Button href={props.repo} startIcon={<GitHubIcon />}>Github</Button>
+          <Button href={props.repo} color='inherit' startIcon={<GitHubIcon />}>Github</Button>
         </CardActions>
       </div>
     </Card>

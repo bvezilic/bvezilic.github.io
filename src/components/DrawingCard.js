@@ -1,13 +1,13 @@
-import Card from '@material-ui/core/Card';
-import { makeStyles } from '@material-ui/core/styles';
-import PictureAsPdfIcon from '@material-ui/icons/PictureAsPdf';
-import { 
+import { makeStyles } from '@mui/styles';
+import PictureAsPdfIcon from '@mui/icons-material/PictureAsPdf';
+import {
+  Card,
   Button, 
   CardContent, 
   CardActions,
   CardMedia, 
   Typography 
-} from '@material-ui/core';
+} from '@mui/material';
 
 
 const useStyles = makeStyles({
